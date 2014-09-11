@@ -1,11 +1,13 @@
 # discourse-locale-override
 
 Simple hack to override official translations files in Discourse and persist it between Docker rebuilds.
-Can be used by translators, early adopters of young locales, 
+Can be used by translators, early adopters of young locales or communities with specific slang.
+
+This repository contains only `pl_PL` locale. See FAQ below if you need to override other one.
 
 ## Docker setup
 
-Add to `/var/discourse/containers/app.yml`:
+Add to your `/var/discourse/containers/app.yml`:
 
 ```ruby
 hooks:
