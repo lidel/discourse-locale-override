@@ -309,6 +309,7 @@ pl_PL:
       watched_categories: "Obserwowane"
       watched_categories_instructions: "Będziesz automatycznie śledzić wszystkie nowe tematy w tych kategoriach: liczba nieprzeczytanych i nowych wpisów będzie wyświetlana obok tytułów na liście tematów. Dodatkowo będziesz otrzymywać powiadomienie o każdym nowym wpisie i temacie."
       tracked_categories: "Śledzone"
+      tracked_categories_instructions: "Będziesz automatycznie śledzić wszystkie nowe tematy w tych kategoriach: licznik nowych i nieprzeczytanych wpisów pojawi się obok tytułu."
       muted_categories: "Wyciszone"
       muted_categories_instructions: "Nie będziesz powiadamiany o niczym dotyczącym nowych tematów w tych kategoriach, i nie będą się one pojawiać na karcie nieprzeczytanych."
       delete_account: "Usuń moje konto"
@@ -487,6 +488,7 @@ pl_PL:
         network: "Sprawdź swoje połączenie."
         network_fixed: "Chyba już w porządku."
         server: "Kod błędu: {{status}}"
+        forbidden: "Nie możesz obejrzeć tego zasobu."
         unknown: "Coś poszło nie tak."
       buttons:
         back: "Cofnij"
@@ -543,6 +545,10 @@ pl_PL:
       reset: "Resetuj hasło"
       complete_username: "Jeśli jakieś mamy konto o nazwie użytkownika <b>%{username}</b>, za chwilę zostanie wysłana wiadomość z instrukcją jak ustawić nowe hasło."
       complete_email: "Jeśli jakieś konto użytkownika posiada adres <b>%{email}</b>, za chwilę zostanie wysłana wiadomość z instrukcją jak ustawić nowe hasło."
+      complete_username_found: "Znaleziono konto o nazwie <b>%{username}</b>,  wkrótce otrzymasz email z instrukcjami opisującymi reset hasła."
+      complete_email_found: "Znaleziono konto przypisane do adresu <b>%{email}</b>,  wkrótce otrzymasz email z instrukcjami opisującymi reset hasła."
+      complete_username_not_found: "Nie znaleziono konta o nazwie <b>%{username}</b>"
+      complete_email_not_found: "Nie znaleziono konta przypisanego do <b>%{email}</b>"
     login:
       title: "Logowanie"
       username: "Użytkownik"
@@ -581,6 +587,7 @@ pl_PL:
         title: "przez GitHub"
         message: "Uwierzytelnianie przez GitHub (upewnij się, że blokada wyskakujących okienek nie jest włączona)"
     composer:
+      add_warning: "To jest oficjalne ostrzeżenie."
       posting_not_on_topic: "W którym temacie chcesz odpowiedzieć?"
       saving_draft_tip: "zapisywanie"
       saved_draft_tip: "zapisano"
@@ -723,6 +730,12 @@ pl_PL:
         hot: "Nie ma gorących tematów."
         category: "Nie ma tematów w kategorii {{category}}."
         top: "Brak najlepszych tematów."
+        educate:
+          new: '<p>Pojawią się tu nowe tematy.</p><p>Domyślnie, tematy są traktowane jako <span class="badge new-topic badge-notification" style="vertical-align:middle;line-height:inherit;">nowe</span> jeśli zostały utworzone w ciągu ostatnich 2 dni.</p><p>Możesz to zmienić w <a href="%{userPrefsUrl}">swoich ustawieniach</a>.</p>'
+          unread: '<p>Pojawią się tu tematy oznaczone licznikiem <span class="badge new-posts badge-notification">1</span> nieprzeczytanych wpisów.</p>
+
+            <p>Domyślnie, jako nieprzeczytane rozumiane są tematy:</p><ul><li>twojego autorstwa</li><li>te w których są twoje odpowiedzi </li><li>czytane przez ciebie dłużej niż 4 minuty</li></ul><p>Znajdą się tu też te, którym ręcznie przyznano status Śledzony lub Obserwowany przyciskiem znajdującym się na końcu każdego tematu.&lt;/p><p>Możesz zmienić te zachowania w swoich <a href="%{userPrefsUrl}">preferencjach</a>.</p>'
+          starred: '<p>Pojawią się tu oznaczone przez ciebie tematy.</p> <p>Aby oznaczyć lub odznaczyć temat kliknij na <i class="fa fa-star"></i> gdy tylko takową zobaczysz &hellip;</p><ul><li>na górze, obok tytułu każdego tematu</li><li>na końcu tematu, przyciskiem <kbd>Oznacz</kbd> </li><li>po lewej stronie na dowolnej liście tematów</li>'
       bottom:
         latest: "Nie ma więcej najnowszych tematów."
         hot: "Nie ma więcej gorących tematów."
@@ -822,13 +835,16 @@ pl_PL:
           '0': 'Ignorujesz wszystkie powiadomienia w tym temacie.'
         watching_pm:
           title: "Obserwuj wszystko"
+          description: "Dostaniesz powiadomienie o każdym nowym wpisie w tej prywatnej dyskusji. Liczba nowych i nieprzeczytanych wpisów pojawi się obok jej tytułu."
         watching:
           title: "Obserwuj wszystko"
+          description: "Dostaniesz powiadomienie o każdym nowym wpisie w tym temacie. Liczba nowych i nieprzeczytanych wpisów pojawi się obok jego tytułu."
         tracking_pm:
           title: "Śledzenie"
           description: "Licznik nowych i nieprzeczytanych wpisów pojawi się obok prywatnej wiadomości. Dostaniesz powiadomienie jedynie gdy ktoś wspomni twoją @nazwę lub odpowie na twój wpis."
         tracking:
           title: "Śledzenie"
+          description: "Licznik nowych i nieprzeczytanych wpisów pojawi się obok tytułu tego tematu. Dostaniesz powiadomienie jedynie gdy ktoś wspomni twoją @nazwę lub odpowie na twój wpis."
         regular:
           title: "Normalny"
           description: "Dostaniesz powiadomienie jedynie gdy ktoś wspomni twoją @nazwę lub odpowie na twój wpis."
@@ -977,6 +993,7 @@ pl_PL:
         upload_not_authorized: "Przepraszamy, ale plik który chcesz wgrać jest niedozwolony (dozwolone rozszerzenia: {{authorized_extensions}})."
         image_upload_not_allowed_for_new_user: "Przepraszamy, ale nowi użytkownicy nie mogą wgrywać obrazów."
         attachment_upload_not_allowed_for_new_user: "Przepraszamy, ale nowi użytkownicy nie mogą wgrywać załączników."
+        attachment_download_requires_login: "Przepraszamy, musisz się zalogować, aby pobierać załączniki."
       abandon:
         confirm: "Czy na pewno chcesz porzucić ten wpis?"
         no_value: "Nie, pozostaw"
@@ -1006,8 +1023,11 @@ pl_PL:
           yes_value: "Tak, usuń też odpowiedzi"
           no_value: "Nie, tylko ten wpis"
         admin: "administracja wpisem (tryb wiki itp)"
-        wiki: "Przełącz wpis w tryb Wiki"
+        wiki: "Włącz tryb Wiki"
         unwiki: "Wyłącz tryb Wiki"
+        revert_to_regular: "Wyłącz kolor moderatora"
+        convert_to_moderator: "Włącz kolor moderatora"
+        rebake: "Odśwież HTML"
       actions:
         flag: 'Oflaguj'
         defer_flags:
@@ -1194,8 +1214,10 @@ pl_PL:
       notifications:
         watching:
           title: "Obserwuj wszystko"
+          description: "Będziesz automatycznie śledzić wszystkie nowe tematy w tych kategoriach: liczba nieprzeczytanych i nowych wpisów będzie wyświetlana obok tytułów. Dodatkowo będziesz otrzymywać powiadomienie o każdym nowym wpisie i temacie."
         tracking:
           title: "Śledzona"
+          description: "Będziesz automatycznie śledzić wszystkie tematy w tych kategoriach: licznik nowych i nieprzeczytanych wpisów pojawi się obok ich tytułów."
         regular:
           title: "Normalny"
           description: "Dostaniesz powiadomienie jedynie gdy ktoś wspomni twoją @nazwę lub odpowie na twój wpis."
@@ -1231,6 +1253,8 @@ pl_PL:
         few: "%{count} kliknięć"
         other: "%{count} kliknięć"
     topic_statuses:
+      warning:
+        help: "To jest oficjalne ostrzeżenie."
       locked:
         help: "Temat został zamknięty. Dodawanie nowych odpowiedzi nie jest możliwe."
       unpinned:
@@ -1383,6 +1407,8 @@ pl_PL:
         agree_flag_modal_title: "Potwierdź i..."
         agree_flag_hide_post: "Potwierdź (ukryj post i wyślij PW)"
         agree_flag_hide_post_title: "Ukryj ten wpis i automatycznie wyślij użytkownikowi prywatną wiadomość informującą, że wpis wymaga przeredagowania"
+        agree_flag_restore_post: "Zgoda (przywróć wpis)"
+        agree_flag_restore_post_title: "Przywróć ten wpis"
         agree_flag: "Potwierdź flagę"
         agree_flag_title: "Potwierdź flagę i zostaw wpis bez zmian"
         defer_flag: "Zignoruj"
@@ -1417,6 +1443,7 @@ pl_PL:
         topic_flagged: "Ten <strong>temat</strong> został oflagowany."
         visit_topic: "Odwiedź temat by podjąć działania."
         was_edited: "Wpis został zmieniony po pierwszej fladze"
+        previous_flags_count: "Ten wpis został do tej pory oznaczony flagą {{count}} razy."
         summary:
           action_type_3:
             one: "nie-na-temat"
@@ -1625,6 +1652,7 @@ pl_PL:
             user_placeholder: "nazwa użytkownika"
             address_placeholder: "nazwa@example.com"
             type_placeholder: "streszczenie, rejestracja…"
+            reply_key_placeholder: "klucz odpowiedzi"
             skipped_reason_placeholder: "powód"
       logs:
         title: "Logi"
@@ -1782,6 +1810,7 @@ pl_PL:
         topics_entered: Widziane tematy
         flags_given_count: Dane flagi
         flags_received_count: Otrzymane flagi
+        warnings_received_count: Otrzymane ostrzeżenia
         flags_given_received_count: 'Flagi przyznane / otrzymane'
         approve: 'Zatwierdź'
         approved_by: "zatwierdzone przez"
@@ -1952,6 +1981,7 @@ pl_PL:
         unread: '<b>g</b>, <b>u</b> Nieprzeczytane'
         starred: '<b>g</b>, <b>f</b> Ulubione'
         categories: '<b>g</b>, <b>c</b> Kategorie'
+        top: '<b>g</b>, <b>t</b> Popularne'
       navigation:
         title: 'Nawigacja'
         jump: '<b>#</b> idź do wpisu o numerze'
@@ -2048,6 +2078,24 @@ pl_PL:
         great_post:
           name: Wspaniały wpis
           description: Otrzymano 50 polubień za wpis. Ta odznaka może być przyznawana wielokrotnie
+        nice_topic:
+          name: Niezły temat
+          description: Otrzymano 10 polubień w temacie. Ta odznaka może być przyznawana wielokrotnie.
+        good_topic:
+          name: Dobry temat
+          description: Otrzymano 25 polubień w temacie. Ta odznaka może być przyznawana wielokrotnie.
+        great_topic:
+          name: Świetny temat
+          description: Otrzymano 50 polubień w temacie. Ta odznaka może być przyznawana wielokrotnie.
+        nice_share:
+          name: Niezłe udostępnienie
+          description: Udostępniono wpis 25 unikalnym odwiedzającym.
+        good_share:
+          name: Dobre udostępnienie
+          description: Udostępniono wpis 300 unikalnym odwiedzającym.
+        great_share:
+          name: Świetne udostępnienie
+          description: Udostępniono wpis 1000 unikalnych odwiedzających.
         first_like:
           name: Pierwsze polubienie
           description: Polubiono wpis

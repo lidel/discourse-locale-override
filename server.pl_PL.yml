@@ -665,11 +665,12 @@ pl_PL:
     quoted: "%{display_username} cytuje Twój wpis w %{link}"
     edited: "%{display_username} edytuje Twój wpis w %{link}"
     posted: "%{display_username} pisze w %{link}"
-    moved_post: "%{display_username} przeniósł(-a) Twój wpis do %{link}"
+    moved_post: "%{display_username} przenosi twój wpis do %{link}"
     private_message: "%{display_username} wysyła Ci prywatną wiadomość: %{link}"
     invited_to_private_message: "%{display_username} zaprosił(-a) Cię do prywatnej wiadomości: %{link}"
     invitee_accepted: "%{display_username} przyjął(-ęła) Twoje zaproszenie"
   search:
+    within_post: "#%{post_number} przez %{username}"
     types:
       category: 'Kategorie'
       user: 'Użytkownicy'
@@ -679,13 +680,13 @@ pl_PL:
   frequent_poster: "Aktywny uczestnik"
   move_posts:
     new_topic_moderator_post:
-      one: "Przeniesiono wpis do nowego tematu: %{topic_link}"
-      few: "Przeniesiono %{count} wpisy do nowego tematu: %{topic_link}"
-      other: "Przeniesiono %{count} wpisów do nowego tematu: %{topic_link}"
+      one: "Przenoszę wpis do nowego tematu: %{topic_link}"
+      few: "Przenoszę %{count} wpisy do nowego tematu: %{topic_link}"
+      other: "Przenoszę %{count} wpisów do nowego tematu: %{topic_link}"
     existing_topic_moderator_post:
-      one: "Przeniesiono wpis do innego tematu: %{topic_link}"
-      few: "Przeniesiono %{count} wpisy do innego tematu: %{topic_link}"
-      other: "Przeniesiono %{count} wpisów do innego tematu: %{topic_link}"
+      one: "Przenoszę wpis do innego tematu: %{topic_link}"
+      few: "Przenoszę %{count} wpisy do innego tematu: %{topic_link}"
+      other: "Przenoszę %{count} wpisów do innego tematu: %{topic_link}"
   topic_statuses:
     archived_enabled: "Temat został zarchiwizowany. Został zablokowany i nie może być zmieniany. "
     archived_disabled: "Temat został przywrócony z archiwum. Został odblokowany i może ponownie być zmieniany."
