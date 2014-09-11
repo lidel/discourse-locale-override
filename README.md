@@ -12,6 +12,7 @@ Add to your `/var/discourse/containers/app.yml`:
 ```ruby
 hooks:
   after_code:
+    - exec:
         cd: /tmp
         cmd:
           - git clone https://github.com/lidel/discourse-locale-override.git
