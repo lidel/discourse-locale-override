@@ -452,7 +452,7 @@ pl_PL:
         bulk_invite:
           none: "Jeszcze nikogo nie zaproszono. Możesz wysłać pojedyncze zaproszenie lub <a href='https://meta.discourse.org/t/send-bulk-invites/16468'>zaprosić wiele osób na raz wysyłając odpowiedni plik</a>."
           text: "Zaproszenia hurtowe z pliku"
-          uploading: "WYSYŁANE"
+          uploading: "Wysyłanie…"
           success: "Plik został przesłany pomyślnie, wkrótce dostaniesz powiadomienie z postępem."
           error: "Podczas przesyłania wystąpił błąd '{{filename}}': {{message}}"
       password:
@@ -870,8 +870,8 @@ pl_PL:
         pin_globally: "Przypnij temat globalnie"
         unarchive: "Przywróć z archiwum"
         archive: "Archiwizuj temat"
-        invisible: "Uczyń niewidocznym"
-        visible: "Uczyń widocznym"
+        invisible: "Ustaw jako niewidoczny"
+        visible: "Ustaw jako widoczny"
         reset_read: "Zresetuj przeczytane dane"
         multi_select: "Wybierz wpisy"
       reply:
@@ -964,7 +964,7 @@ pl_PL:
       in_reply_to: "w odpowiedzi na"
       last_edited_on: "ostatnia edycja wpisu"
       reply_as_new_topic: "Odpowiedz w nowym temacie"
-      continue_discussion: "Kontynuuj dyskusję z {{postLink}}:"
+      continue_discussion: "Kontynuując dyskusję z {{postLink}}:"
       follow_quote: "idź do cytowanego wpisu"
       show_full: "Pokaż pełny wpis"
       show_hidden: 'Zobacz ukrytą zawartość.'
@@ -1025,8 +1025,8 @@ pl_PL:
         admin: "administracja wpisem (tryb wiki itp)"
         wiki: "Włącz tryb Wiki"
         unwiki: "Wyłącz tryb Wiki"
-        revert_to_regular: "Wyłącz kolor moderatora"
         convert_to_moderator: "Włącz kolor moderatora"
+        revert_to_regular: "Wyłącz kolor moderatora"
         rebake: "Odśwież HTML"
       actions:
         flag: 'Oflaguj'
@@ -1197,7 +1197,7 @@ pl_PL:
       images: "Obrazy"
       auto_close_label: "Automatycznie zamykaj tematy po:"
       auto_close_units: "godzin"
-      email_in: "Niestandardowy adres poczty przychodządej"
+      email_in: "Dedykowany adres email kategorii:"
       email_in_allow_strangers: "Akceptuj wiadomości email od anonimowych, nieposiadających kont użytkowników "
       email_in_disabled: "Tworzenie nowych tematów emailem jest wyłączone w ustawieniach serwisu. "
       email_in_disabled_click: 'Kliknij tu, aby włączyć.'
@@ -1269,7 +1269,7 @@ pl_PL:
       archived:
         help: "Ten temat został zarchiwizowany i nie można go zmieniać"
       invisible:
-        help: "Temat jest niewidoczny: nie będzie wyświetlany na listach tematów i można uzyskać do niego dostęp jedynie poprzez link bezpośredni"
+        help: "Temat jest niewidoczny: nie będzie wyświetlany na listach tematów a dostęp do niego można uzyskać jedynie poprzez link bezpośredni"
     posts: "Wpisy"
     posts_lowercase: "wpisy"
     posts_long: "jest {{number}} wpisów w tym temacie"
@@ -1513,8 +1513,8 @@ pl_PL:
           filename: "Nazwa pliku"
           size: "Rozmiar"
         upload:
-          text: "PRZEŚLIJ"
-          uploading: "PRZESYŁANIE"
+          text: "Wyślij"
+          uploading: "Wysyłanie…"
           success: "'{{filename}}' został pomyślnie przesłany."
           error: "Podczas przesyłania pliku wystąpił błąd '{{filename}}': {{message}}"
         operations:
@@ -1528,7 +1528,7 @@ pl_PL:
             text: "Kopia zapasowa"
             title: "Wykonaj kopię zapasową"
             confirm: "Czy chcesz wykonać kopię zapasową?"
-            without_uploads: "Tak (bez wysyłania)"
+            without_uploads: "Tak (bez załączników)"
           download:
             text: "Pobierz"
             title: "Pobierz kopię zapasową"
@@ -1984,20 +1984,20 @@ pl_PL:
         top: '<b>g</b>, <b>t</b> Popularne'
       navigation:
         title: 'Nawigacja'
-        jump: '<b>#</b> idź do wpisu o numerze'
+        jump: '<b>#</b> idź do wpisu #'
         back: '<b>u</b> wstecz'
-        up_down: '<b>k</b>/<b>j</b> przesuń zaznaczenie w górę/dół'
+        up_down: '<b>k</b>/<b>j</b> zaznacz &uarr; &darr;'
         open: '<b>o</b> lub <b>Enter</b> otwórz wybrany temat'
         next_prev: '<b>shift j</b>/<b>shift k</b> następna/poprzednia sekcja'
       application:
         title: 'Aplikacja'
         create: '<b>c</b> utwórz nowy temat'
         notifications: '<b>n</b> pokaż powiadomienia'
-        site_map_menu: '<b>=</b> otwórz menu mapy strony'
-        user_profile_menu: '<b>p</b> Otwórz menu profilu użytkownika'
-        show_incoming_updated_topics: '<b>.</b> pokaż nowe/zmienione tematy'
+        site_map_menu: '<b>=</b> menu strony'
+        user_profile_menu: '<b>p</b> menu użytkownika'
+        show_incoming_updated_topics: '<b>.</b> nowe zmiany w tematach'
         search: '<b>/</b> wyszukaj'
-        help: '<b>?</b> pokaż skróty klawiszowe'
+        help: '<b>?</b> skróty klawiszowe'
         dismiss_new_posts: '<b>x</b>, <b>r</b> wyczyść listę wpisów'
         dismiss_topics: '<b>x</b>, <b>t</b> wyczyść listę tematów'
       actions:

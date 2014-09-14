@@ -710,7 +710,7 @@ pl_PL:
     pinned_globally_enabled: "Temat został przypięty globalnie. Będzie pojawiać się na początku swojej kategorii i wszystkich list dopóki nie zostanie odpięty przez obsługę lub prywatnie przez użytkownika."
     pinned_globally_disabled: "Temat został odpięty. Już nie będzie wyświetlany na górze swojej kategorii."
     visible_enabled: "Temat jest ponownie widoczny i będzie pojawiać się na listach tematów."
-    visible_disabled: "Ten temat został ustawiony jako niewidoczny. Nie pojawi się na żadnej liście tematów. Aby go wyświetlić wymagana będzie znajomość linku bezpośredniego. "
+    visible_disabled: "Ten temat został ustawiony jako niewidoczny. Nie pojawi się na żadnej liście tematów. Aby go wyświetlić wymagana będzie znajomość linku bezpośredniego."
   login:
     not_approved: "Twoje konto nie zostało jeszcze aktywowane. Zostaniesz powiadomiony emailem gdy będziesz mógł się zalogować."
     incorrect_username_email_or_password: "Niepoprawna nazwa użytkownika, email lub hasło"
@@ -723,6 +723,7 @@ pl_PL:
     something_already_taken: "Coś poszło źle. Możliwe, że ta nazwa użytkownika lub email są już zarejestrowane. Spróbuj użyć procedury przypominania hasła."
     omniauth_error: "Przepraszamy, wystąpił błąd podczas uwierzytelniania Twojego konta %{strategy}. Może nie zaakceptowałeś uwierzytelnienia?"
     omniauth_error_unknown: "Wystąpił błąd podczas logowania, spróbuj ponownie."
+    password_too_long: "Hasła są ograniczone do 200 znaków."
   user:
     username:
       short: "music zawierać co najmniej %{min} znaków"
@@ -886,6 +887,13 @@ pl_PL:
         Jeśli to nie była twoja prośba, możesz zignorować tą wiadomość.
 
         Kliknij odnośnik poniżej by ustawić hasło:
+        %{base_url}/users/password-reset/%{email_token}
+    account_created:
+      subject_template: "[%{site_name}] Twoje nowe konto"
+      text_body_template: |
+        Utworzyliśmy Twoje konto na %{site_name}
+
+        Kliknij na linku poniżej, aby ustawić swoje hasło:
         %{base_url}/users/password-reset/%{email_token}
     authorize_email:
       subject_template: "[%{site_name}] Potwierdź nowy adres email"
