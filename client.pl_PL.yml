@@ -191,7 +191,7 @@ pl_PL:
     save: "Zapisz zmiany"
     saving: "Zapisuję…"
     saved: "Zapisano!"
-    upload: "Wgraj"
+    upload: "Dodaj"
     uploading: "Wysyłam…"
     uploaded: "Wgrano!"
     enable: "Włącz"
@@ -353,8 +353,8 @@ pl_PL:
         letter_based: "Awatar przyznany przez system"
         uploaded_avatar: "Zwyczajny obrazek"
         uploaded_avatar_empty: "Dodaj zwyczajny obrazek"
-        upload_title: "Wgraj swoje zdjęcie"
-        upload_picture: "Wgraj zdjęcie"
+        upload_title: "Wyślij swoją grafikę"
+        upload_picture: "Wyślij grafikę"
         image_is_not_a_square: "Uwaga: przycięliśmy twój obraz ponieważ nie był kwadratem."
       change_profile_background:
         title: "Tło profilu"
@@ -637,7 +637,7 @@ pl_PL:
       quote_text: "Cytat"
       code_title: "Tekst sformatowany"
       code_text: "Sformatowany blok tekstu poprzedź 4 spacjami"
-      upload_title: "Wgraj"
+      upload_title: "Dodaj"
       upload_description: "wprowadź opis tutaj"
       olist_title: "Lista numerowana"
       ulist_title: "Lista wypunktowana"
@@ -734,7 +734,7 @@ pl_PL:
           new: '<p>Pojawią się tu nowe tematy.</p><p>Domyślnie, tematy są traktowane jako <span class="badge new-topic badge-notification" style="vertical-align:middle;line-height:inherit;">nowe</span> jeśli zostały utworzone w ciągu ostatnich 2 dni.</p><p>Możesz to zmienić w <a href="%{userPrefsUrl}">swoich ustawieniach</a>.</p>'
           unread: '<p>Pojawią się tu tematy oznaczone licznikiem <span class="badge new-posts badge-notification">1</span> nieprzeczytanych wpisów.</p>
 
-            <p>Domyślnie, jako nieprzeczytane rozumiane są tematy:</p><ul><li>twojego autorstwa</li><li>te w których są twoje odpowiedzi </li><li>czytane przez ciebie dłużej niż 4 minuty</li></ul><p>Znajdą się tu też te, którym ręcznie przyznano status Śledzony lub Obserwowany przyciskiem znajdującym się na końcu każdego tematu.&lt;/p><p>Możesz zmienić te zachowania w swoich <a href="%{userPrefsUrl}">preferencjach</a>.</p>'
+            <p>Domyślnie, jako nieprzeczytane rozumiane są tematy:</p><ul><li>twojego autorstwa</li><li>te w których są twoje odpowiedzi </li><li>czytane przez ciebie dłużej niż 4 minuty</li></ul><p>Znajdą się tu też te, którym ręcznie przyznano status Śledzony lub Obserwowany przyciskiem znajdującym się na końcu każdego tematu.</p><p>Możesz zmienić te zachowania w swoich <a href="%{userPrefsUrl}">ustawieniach</a>.</p>'
           starred: '<p>Pojawią się tu oznaczone przez ciebie tematy.</p> <p>Aby oznaczyć lub odznaczyć temat kliknij na <i class="fa fa-star"></i> gdy tylko takową zobaczysz &hellip;</p><ul><li>na górze, obok tytułu każdego tematu</li><li>na końcu tematu, przyciskiem <kbd>Oznacz</kbd> </li><li>po lewej stronie na dowolnej liście tematów</li>'
       bottom:
         latest: "Nie ma więcej najnowszych tematów."
@@ -1310,8 +1310,8 @@ pl_PL:
       unread:
         title:
           zero: "Nieprzeczytane"
-          one: "Nieprzeczytany (1)"
-          other: "Nieprzeczytanych ({{count}})"
+          one: "Nieprzeczytane (1)"
+          other: "Nieprzeczytane ({{count}})"
         help: "obserwowane lub śledzone tematy z nieprzeczytanymi wpisami"
         lower_title_with_count:
           one: "1 nieprzeczytany"
