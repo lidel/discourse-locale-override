@@ -17,6 +17,7 @@ hooks:
         cmd:
           - git clone https://github.com/lidel/discourse-locale-override.git
           - mv discourse-locale-override/*.yml $home/config/locales/
+          - mv discourse-locale-override/plugins/emoji/*.yml $home/plugins/emoji/config/locales/
           - mv discourse-locale-override/plugins/poll/*.yml $home/plugins/poll/config/locales/
           - rm -rf discourse-locale-override
 ```
