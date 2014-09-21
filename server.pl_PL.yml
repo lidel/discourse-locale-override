@@ -159,6 +159,9 @@ pl_PL:
       models:
         topic:
           attributes:
+            base:
+              warning_requires_pm: "Ostrzeżenie można dołączać jedynie do prywatnych wiadomości."
+              too_many_users: "Jedno ostrzeżenie możesz wysłać tylko do pojedynczego użytkownika."
             archetype:
               cant_send_pm: "Przepraszamy, nie możesz wysłać prywatnej wiadomości do tego użytkownika."
         user:

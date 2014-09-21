@@ -3,7 +3,7 @@
 Simple hack to override official translations files in Discourse and persist them between Docker rebuilds.
 Can be used by translators, early adopters of young locales or communities with specific slang.
 
-This repository contains only `pl_PL` locale. See FAQ below if you need to override other one.
+This repository contains only `pl_PL` locale. See FAQ below if you need to override a different one.
 
 ## Docker setup
 
