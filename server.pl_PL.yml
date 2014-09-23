@@ -781,12 +781,20 @@ pl_PL:
         Miłego korzystania!
     welcome_invite:
       subject_template: "Witaj na %{site_name}!"
+      text_body_template: "Dziękujemy za przyjęcie zaproszenia do %{site_name} – witamy!\n\nTwoja automatycznie wygenerowana nazwa użytkownika: **%{username}**. Możesz ją zmienić w każdej chwili w [swoich ustawieniach][prefs].\n\nAby zalogować się:\n\nA) Zaloguj się przyciskiem logowania przez zewnętrzny serwis. Pamiętaj, aby podpięty pod wybrany serwis adres e-mail **był taki sam** jak ten na który dostałeś swoje zaproszenie. W przeciwnym wypadku nie będziemy mogli stwierdzić, że ty to Ty! \n\nB) Stwórz unikalne hasło w [swoich ustawieniach][prefs] i zaloguj się przy jego pomocy.\n\n%{new_user_tips}\n\nWierzymy w [cywilizowane zachowanie](%{base_url}/guidelines) jako podstawę naszej społeczności.\n\nMiłego uczestnictwa! \n\n[prefs]: %{user_preferences_url}\n"
     export_succeeded:
       subject_template: "Eksportowanie zostało zakończone."
       text_body_template: "Eksport się powiódł."
     import_succeeded:
       subject_template: "Importowanie zostało zakończone."
       text_body_template: "Import się powiódł."
+    email_reject_empty:
+      text_body_template: |
+        Przepraszamy, ale wysyłanie twojej wiadomości do %{destination} (o tytule %{former_title}) zakończyło się niepowodzeniem.
+
+        Nie udało się wykryć treści. Upewnij się, że odpowiedź znajduje się na początku e-maila: nie rozpoznajemy odpowiedzi wymieszanych z cytowanym tekstem,
+
+        Dodatkowo upewnij się, że odpowiadasz e-mailem w formacie HTML (a nie czystym ASCII).
     too_many_spam_flags:
       subject_template: "Nowe konto zablokowane"
     blocked_by_staff:
