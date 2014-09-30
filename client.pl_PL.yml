@@ -534,7 +534,6 @@ pl_PL:
     created: 'Utworzono'
     created_lowercase: 'utworzono'
     trust_level: 'Poziom zaufania'
-    search_hint: 'nazwa użytkownika lub email'
     create_account:
       title: "Utwórz Konto"
       failed: "Coś poszło nie tak, możliwe, że wybrany adres email jest już zarejestrowany, spróbuj użyć odnośnika przypomnienia hasła"
@@ -964,7 +963,6 @@ pl_PL:
       post_number: "wpis {{number}}"
       in_reply_to: "w odpowiedzi na"
       last_edited_on: "ostatnia edycja wpisu"
-      reply_as_new_topic: "Odpowiedz w nowym temacie"
       continue_discussion: "Kontynuując dyskusję z {{postLink}}:"
       follow_quote: "idź do cytowanego wpisu"
       show_full: "Pokaż pełny wpis"
@@ -1206,7 +1204,6 @@ pl_PL:
       allow_badges_label: "Włącz przyznawanie odznak na podstawie aktywności w tej kategorii"
       edit_permissions: "Edytuj uprawnienia"
       add_permission: "Dodaj uprawnienie"
-      everyone_permission: "wszyscy"
       this_year: "ten rok"
       position: "pozycja"
       default_position: "Domyślna pozycja"
@@ -1871,7 +1868,6 @@ pl_PL:
           likes_given: "Polubień danych"
           likes_received: "Polubień otrzymanych"
           qualifies: "Kwalifikuje się do 3 poziomu zaufania."
-          will_be_promoted: "Zwiększenie zaufania wejdzie w życie w ciągu 24 godzin."
           does_not_qualify: "Nie kwalifikuje się do 3 poziomu zaufania."
         sso:
           title: "Single Sign On"
@@ -1880,10 +1876,8 @@ pl_PL:
           external_name: "Nazwa"
           external_email: "Email"
           external_avatar_url: "URL awatara"
-      site_content:
-        none: "Wybierz typ zawartości których chcesz zacząć edytować."
-        title: 'Teksty'
-        edit: "Edytuj zawartość strony"
+      site_text:
+        title: 'Kontekst'
       site_settings:
         show_overriden: 'Pokaż tylko nadpisane'
         title: 'Ustawienia'
