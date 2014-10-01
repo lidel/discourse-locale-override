@@ -461,6 +461,7 @@ pl_PL:
         common: "To hasło jest zbyt popularne."
         ok: "Twoje hasło jest poprawne."
         instructions: "Co najmniej %{count} znaków."
+      associated_accounts: "Powiązane konta"
       ip_address:
         title: "Ostatni adres IP"
       registration_ip_address:
@@ -534,6 +535,7 @@ pl_PL:
     created: 'Utworzono'
     created_lowercase: 'utworzono'
     trust_level: 'Poziom zaufania'
+    search_hint: 'nazwa'
     create_account:
       title: "Utwórz Konto"
       failed: "Coś poszło nie tak, możliwe, że wybrany adres email jest już zarejestrowany, spróbuj użyć odnośnika przypomnienia hasła"
@@ -963,6 +965,7 @@ pl_PL:
       post_number: "wpis {{number}}"
       in_reply_to: "w odpowiedzi na"
       last_edited_on: "ostatnia edycja wpisu"
+      reply_as_new_topic: "Odpowiedz w nowym temacie"
       continue_discussion: "Kontynuując dyskusję z {{postLink}}:"
       follow_quote: "idź do cytowanego wpisu"
       show_full: "Pokaż pełny wpis"
@@ -1693,6 +1696,7 @@ pl_PL:
             unsuspend_user: "odwieś użytkownika"
             grant_badge: "przyznaj odznakę"
             revoke_badge: "odbierz odznakę"
+            check_email: "sprawdź pocztę"
         screened_emails:
           title: "Ekranowane emaile"
           description: "Kiedy ktoś próbuje założyć nowe konto, jego adres email zostaje sprawdzony i rejestracja zostaje zablokowana, lub inna akcja jest podejmowana."
@@ -1766,6 +1770,9 @@ pl_PL:
           few: "Odrzucenie %{count} użytkowników powiodło się."
           other: "Odrzucenie %{count} użytkowników nie powiodło się."
         not_verified: "Niezweryfikowany"
+        check_email:
+          title: "Wyświetl adres email tego użytkownika"
+          text: "Pokaż email"
       user:
         suspend_failed: "Coś poszło nie tak podczas zawieszania użytkownika {{error}}"
         unsuspend_failed: "Coś poszło nie tak podczas odwieszania użytkownika {{error}}"
@@ -1851,6 +1858,10 @@ pl_PL:
         suspend_modal_title: "Zawieś użytkownika"
         trust_level_2_users: "Użytkownicy o 2. poziomie zaufania"
         trust_level_3_requirements: "Wymagania 3. poziomu zaufania"
+        trust_level_locked_tip: "poziom zaufania jest zablokowany, system nie będzie awansować lub degradować tego użytkownika"
+        trust_level_unlocked_tip: "poziom zaufania jest odblokowany, system może awansować lub degradować tego użytkownika"
+        lock_trust_level: "Zablokuj poziom zaufania"
+        unlock_trust_level: "Odblokuj poziom zaufania"
         tl3_requirements:
           title: "Wymagania dla osiągnięcia 3. poziomu zaufania"
           table_title: "W ciągu ostatnich 100 dni:"
@@ -1869,6 +1880,11 @@ pl_PL:
           likes_received: "Polubień otrzymanych"
           qualifies: "Kwalifikuje się do 3 poziomu zaufania."
           does_not_qualify: "Nie kwalifikuje się do 3 poziomu zaufania."
+          will_be_promoted: "Zostanie awansowany wkrótce."
+          will_be_demoted: "Zostanie zdegradowany wkrótce."
+          on_grace_period: "Podlega pod okres ochronny, nie zostanie zdegradowany."
+          locked_will_not_be_promoted: "Zablokowany poziom zaufania. Nie będzie awansować."
+          locked_will_not_be_demoted: "Zablokowany poziom zaufania. Nie będzie degradowany."
         sso:
           title: "Single Sign On"
           external_id: "Zewnętrzny ID"
@@ -1876,7 +1892,23 @@ pl_PL:
           external_name: "Nazwa"
           external_email: "Email"
           external_avatar_url: "URL awatara"
+      user_fields:
+        title: "Pola użytkownika"
+        description: "Wypełnienie dodanych tu pól będzie wymagane podczas rejestracji."
+        create: "Dodaj pole użytkownika"
+        untitled: "Bez tytułu"
+        name: "Nazwa pola"
+        type: "Typ pola"
+        save: "Zapisz"
+        edit: "Edycja"
+        delete: "Usuń"
+        cancel: "Anuluj"
+        delete_confirm: "Czy na pewno chcesz usunąć to pole?"
+        field_types:
+          text: 'Pole tekstowe'
+          confirm: 'Potwierdzenie'
       site_text:
+        none: "Aby rozpocząć edycję, wybierz typ treści. "
         title: 'Kontekst'
       site_settings:
         show_overriden: 'Pokaż tylko nadpisane'
