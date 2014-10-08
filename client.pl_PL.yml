@@ -131,7 +131,6 @@ pl_PL:
     daily: "dziennie"
     weekly: "tygodniowo"
     every_two_weeks: "co dwa tygodnie"
-    max: "maks"
     character_count:
       one: "1 znak"
       few: "{{count}} znaki"
@@ -371,7 +370,7 @@ pl_PL:
         too_short: "Twoja nazwa jest za krótka."
         ok: "Twoja nazwa jest poprawna."
       username:
-        title: "Nazwa użytkownika"
+        title: "Nazwa konta"
         instructions: "Unikalna, krótka i bez spacji."
         short_instructions: "Aby o tobie wspomnieć, wystarczy napisać @{{username}}."
         available: "Nazwa jest dostępna."
@@ -530,14 +529,15 @@ pl_PL:
       invite: "Zaproś innych"
       remove_allowed_user: "Czy naprawdę chcesz usunąć {{name}} z tej prywatnej wiadomości?"
     email: 'Email'
-    username: 'Nazwa użytkownika'
+    username: 'Nazwa konta'
     last_seen: 'Ostatnio oglądane'
     created: 'Utworzono'
     created_lowercase: 'utworzono'
     trust_level: 'Poziom zaufania'
     search_hint: 'nazwa'
+    search_hint_admin: 'login lub email'
     create_account:
-      title: "Utwórz Konto"
+      title: "Utwórz konto"
       failed: "Coś poszło nie tak, możliwe, że wybrany adres email jest już zarejestrowany, spróbuj użyć odnośnika przypomnienia hasła"
     forgot_password:
       title: "Zapomniane hasło"
@@ -765,7 +765,6 @@ pl_PL:
         few: '{{count}} nieprzeczytane tematy'
         other: '{{count}} nieprzeczytanych tematów'
       title: 'Temat'
-      loading_more: "Wczytuję więcej tematów…"
       loading: 'Wczytuję temat…'
       invalid_access:
         title: "Temat jest prywatny"
@@ -1234,6 +1233,8 @@ pl_PL:
       delete_spammer: "Usuń spamera"
       delete_confirm: "Zamierzasz usunąć<b>%{posts}</b> wpisów i <b>%{topics}</b> tematów użytkownika, usunąć jest konto, zablokować możliwość zakładania kont z jego adresu IP <b>%{ip_address}</b> i dodać jego email <b>%{email}</b> do listy trwale zablokowanych. Czy na pewno ten użytkownik jest spamerem?"
       yes_delete_spammer: "Tak, usuń spamera"
+      ip_address_missing: "(N/D)"
+      hidden_email_address: "(ukryto)"
       submit_tooltip: "Zapisz prywatną flagę."
       take_action_tooltip: "Nie czekaj, aż wpis zostanie zgłoszony przez innych,  natychmiast oflaguj do działania . "
       cant: "Przepraszamy, nie możesz oflagować teraz tego wpisu."
@@ -1406,7 +1407,7 @@ pl_PL:
         active: "Aktywność"
         agree: "Potwierdź"
         agree_title: "Potwierdź to zgłoszenie jako uzasadnione i poprawne"
-        agree_flag_modal_title: "Potwierdź i..."
+        agree_flag_modal_title: "Potwierdź i…"
         agree_flag_hide_post: "Potwierdź (ukryj post i wyślij PW)"
         agree_flag_hide_post_title: "Ukryj ten wpis i automatycznie wyślij użytkownikowi prywatną wiadomość informującą, że wpis wymaga przeredagowania"
         agree_flag_restore_post: "Zgoda (przywróć wpis)"
@@ -1421,7 +1422,7 @@ pl_PL:
         delete_post_defer_flag_title: "Usuń wpis. Jeśli jest pierwszym w temacie, usuń temat."
         delete_post_agree_flag: "Usuń post i potwierdź flagę"
         delete_post_agree_flag_title: "Usuń wpis. Jeśli jest pierwszym w temacie, usuń temat."
-        delete_flag_modal_title: "Usuń i..."
+        delete_flag_modal_title: "Usuń i…"
         delete_spammer: "Usuń spamera"
         delete_spammer_title: "Usuwa konto tego użytkownika oraz wszystkie tematy i wpisy jakie nim utworzono."
         disagree_flag_unhide_post: "Wycofaj (pokaż wpis)"
@@ -1484,7 +1485,7 @@ pl_PL:
       api:
         generate_master: "Generuj Master API Key"
         none: "Nie ma teraz aktywnych kluczy API."
-        user: "Urzytkownik"
+        user: "Użytkownik"
         title: "API"
         key: "Klucz API"
         generate: "Generuj"
@@ -1772,7 +1773,6 @@ pl_PL:
         not_verified: "Niezweryfikowany"
         check_email:
           title: "Wyświetl adres email tego użytkownika"
-          text: "Pokaż email"
       user:
         suspend_failed: "Coś poszło nie tak podczas zawieszania użytkownika {{error}}"
         unsuspend_failed: "Coś poszło nie tak podczas odwieszania użytkownika {{error}}"
@@ -1894,7 +1894,6 @@ pl_PL:
           external_avatar_url: "URL awatara"
       user_fields:
         title: "Pola użytkownika"
-        description: "Wypełnienie dodanych tu pól będzie wymagane podczas rejestracji."
         create: "Dodaj pole użytkownika"
         untitled: "Bez tytułu"
         name: "Nazwa pola"
