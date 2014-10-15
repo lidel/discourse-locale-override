@@ -27,6 +27,7 @@ pl_PL:
   errors:
     messages:
       too_long_validation: "ograniczono do %{max} znaków, podano %{length}."
+      taken: "jest już zajęty"
     embed:
       load_from_remote: "Wystąpił błąd podczas wczytywania tego wpisu."
   bulk_invite:
@@ -722,6 +723,7 @@ pl_PL:
     omniauth_error: "Przepraszamy, wystąpił błąd podczas uwierzytelniania Twojego konta %{strategy}. Może nie zaakceptowałeś uwierzytelnienia?"
     omniauth_error_unknown: "Wystąpił błąd podczas logowania, spróbuj ponownie."
     password_too_long: "Hasła są ograniczone do 200 znaków."
+    close_window: "Uwierzytelnianie zakończone. Aby kontynuować, zamknij to okno."
   user:
     username:
       short: "music zawierać co najmniej %{min} znaków"
@@ -745,6 +747,13 @@ pl_PL:
       %{invite_link}
 
       To zaproszenie zostało wysłane przez zaufanego użytkownika, nie musisz się logować.
+  invite_password_instructions:
+    subject_template: "Ustaw hasło dla swojego konta na %{site_name}"
+    text_body_template: |
+      Dziękujemy za zaakceptowanie zaproszenia na  %{site_name} -- witaj!
+
+      Aby wybrać swoje hasło i zalogować się do serwisu kliknij link:
+      %{base_url}/users/password-reset/%{email_token}
   test_mailer:
     subject_template: "[%{site_name}] Test dostarczania poczty"
   flags_reminder:
@@ -778,12 +787,32 @@ pl_PL:
       subject_template: "Witaj na %{site_name}!"
       text_body_template: "Dziękujemy za przyjęcie zaproszenia do %{site_name} – witamy!\n\nTwoja automatycznie wygenerowana nazwa użytkownika: **%{username}**. Możesz ją zmienić w każdej chwili w [swoich ustawieniach][prefs].\n\nAby zalogować się:\n\nA) Zaloguj się przyciskiem logowania przez zewnętrzny serwis. Pamiętaj, aby podpięty pod wybrany serwis adres e-mail **był taki sam** jak ten na który dostałeś swoje zaproszenie. W przeciwnym wypadku nie będziemy mogli stwierdzić, że ty to Ty! \n\nB) Stwórz unikalne hasło w [swoich ustawieniach][prefs] i zaloguj się przy jego pomocy.\n\n%{new_user_tips}\n\nWierzymy w [cywilizowane zachowanie](%{base_url}/guidelines) jako podstawę naszej społeczności.\n\n\
         Miłego uczestnictwa! \n\n[prefs]: %{user_preferences_url}\n"
-    export_succeeded:
-      subject_template: "Eksportowanie zostało zakończone."
-      text_body_template: "Eksport się powiódł."
-    import_succeeded:
-      subject_template: "Importowanie zostało zakończone."
-      text_body_template: "Import się powiódł."
+    backup_succeeded:
+      subject_template: "Kopia zapasowa jest gotowa"
+      text_body_template: "Kopia zapasowa została wykonana pomyślnie.\nOdwiedź [admin > kopie zapasowe](/admin/backups) aby ją pobrać."
+    backup_failed:
+      subject_template: "Kopia zapasowa nieudana"
+      text_body_template: |
+        Tworzenie kopii zapasowej było nieudane.
+
+        Log poniżej:
+
+        ```
+        %{logs}
+        ```
+    restore_succeeded:
+      subject_template: "Przywrócenie udane"
+      text_body_template: "Przywrócenie zakończyło się sukcesem."
+    restore_failed:
+      subject_template: "Przywracanie nieudane"
+      text_body_template: |
+        Przywrócenie z kopii zapasowej było nieudane.
+
+        Log poniżej:
+
+        ```
+        %{logs}
+        ```
     email_reject_empty:
       text_body_template: |
         Przepraszamy, ale wysyłanie twojej wiadomości do %{destination} (o tytule %{former_title}) zakończyło się niepowodzeniem.
