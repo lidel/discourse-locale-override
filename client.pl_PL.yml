@@ -278,6 +278,8 @@ pl_PL:
       invited_by: "Zaproszono przez"
       trust_level: "Poziom zaufania"
       notifications: "Powiadomienia"
+      dismiss_notifications: "Oznacz jako przeczytane"
+      dismiss_notifications_tooltip: "Oznacz wszystkie powiadomienia jako przeczytane"
       disable_jump_reply: "Po odpowiedzi nie skacz do twojego nowego wpisu "
       dynamic_favicon: "Pokazuj powiadomienia o nowych wiadomościach na ikonie w karcie przeglądarki (eksperymentalne)"
       edit_history_public: "Pozwól innym oglądać historię edycji moich wpisów"
@@ -343,6 +345,10 @@ pl_PL:
         image_is_not_a_square: "Uwaga: przycięliśmy twój obraz ponieważ nie był kwadratem."
       change_profile_background:
         title: "Tło profilu"
+        instructions: "Tła w profilach są wycentrowane i posiadają domyślną szerokość 850px."
+      change_expansion_background:
+        title: "Tło mini-profilu"
+        instructions: "Tło mini-profilu (widocznego po kliknięciu na awatarze) jest wycentrowane i posiada domyślną szerokość 590px."
       email:
         title: "Email"
         instructions: "Nie będzie publicznie widoczny."
@@ -1286,6 +1292,9 @@ pl_PL:
     category_title: "Kategoria"
     history: "Historia"
     changed_by: "przez {{author}}"
+    raw_email:
+      title: "Źródło emaila"
+      not_available: "Niedostępne!"
     categories_list: "Lista Kategorii"
     filters:
       with_topics: "%{filter} tematy"
@@ -1977,11 +1986,13 @@ pl_PL:
         grant: Przyznaj
         no_user_badges: "%{name} nie otrzymał żadnych odznak."
         no_badges: Nie ma odznak, które można by było przyznać.
+        none_selected: "Wybierz odznakę, aby rozpocząć"
         allow_title: Pozwól wykorzystywać odznakę jako tytuł
         multiple_grant: Może być przyznana wielokrotnie
         listable: Wyświetlaj odznakę na publicznych listach odznak
         enabled: Włącz odznakę
         icon: Ikona
+        icon_help: "Użyj jednej z klas Font Awesome lub adresu URL do grafiki"
         query: 'Zapytanie odznaki (SQL) '
         target_posts: Wpisy powiązane z odznaką
         auto_revoke: Codziennie uruchamiaj zapytanie odbierające odznakę
