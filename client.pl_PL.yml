@@ -113,6 +113,7 @@ pl_PL:
     admin_title: "Administracja"
     flags_title: "Flagi"
     show_more: "pokaż więcej"
+    show_help: "pomoc"
     links: "Odnośniki"
     links_lowercase: "linki"
     faq: "FAQ"
@@ -148,10 +149,10 @@ pl_PL:
       stat:
         all_time: "Ogółem"
         last_7_days: "Ostatnich 7 dni"
-      like_count: "Liczba polubionych"
-      topic_count: "Liczba tematów"
-      post_count: "Liczba wpisów"
-      user_count: "Liczba użytkowników"
+      like_count: "Polubienia"
+      topic_count: "Tematy"
+      post_count: "Wpisy"
+      user_count: "Użytkownicy"
     bookmarks:
       not_logged_in: "przykro nam, ale należy się zalogować, aby dodawać zakładki"
       created: "zakładka dodana"
@@ -346,9 +347,9 @@ pl_PL:
       change_profile_background:
         title: "Tło profilu"
         instructions: "Tła w profilach są wycentrowane i posiadają domyślną szerokość 850px."
-      change_expansion_background:
-        title: "Tło mini-profilu"
-        instructions: "Tło mini-profilu (widocznego po kliknięciu na awatarze) jest wycentrowane i posiada domyślną szerokość 590px."
+      change_card_background:
+        title: "Tło karty użytkownika"
+        instructions: "Tło karty użytkownika est wycentrowane i posiada domyślną szerokość 590px."
       email:
         title: "Email"
         instructions: "Nie będzie publicznie widoczny."
@@ -386,6 +387,8 @@ pl_PL:
       created: "Dołączył"
       log_out: "Wyloguj"
       location: "Lokalizacja"
+      card_badge:
+        title: "Odznaka karty użytkownika"
       website: "Strona internetowa"
       email_settings: "Email"
       email_digests:
@@ -528,8 +531,8 @@ pl_PL:
     created: 'Utworzono'
     created_lowercase: 'utworzono'
     trust_level: 'Poziom zaufania'
-    search_hint: 'nazwa'
-    search_hint_admin: 'login lub email'
+    search_hint: 'nazwa użytkownika lub adres IP'
+    search_hint_admin: 'nazwa użytkownika, email lub IP'
     create_account:
       title: "Utwórz konto"
       failed: "Coś poszło nie tak, możliwe, że wybrany adres email jest już zarejestrowany, spróbuj użyć odnośnika przypomnienia hasła"
@@ -615,7 +618,7 @@ pl_PL:
       view_new_post: "Zobacz Twój nowy wpis."
       saving: "Zapisuję…"
       saved: "Zapisano!"
-      saved_draft: "Posiadasz zachowany szkic wpisu. Kliknij tutaj, aby wznowić jego edycję."
+      saved_draft: "Posiadasz zachowany szkic wpisu. Kliknij tu aby wznowić jego edycję."
       uploading: "Wczytuję…"
       show_preview: 'pokaż podgląd &raquo;'
       hide_preview: '&laquo; schowaj podgląd'
@@ -1992,6 +1995,7 @@ pl_PL:
         listable: Wyświetlaj odznakę na publicznych listach odznak
         enabled: Włącz odznakę
         icon: Ikona
+        image: Grafika
         icon_help: "Użyj jednej z klas Font Awesome lub adresu URL do grafiki"
         query: 'Zapytanie odznaki (SQL) '
         target_posts: Wpisy powiązane z odznaką
@@ -2025,6 +2029,8 @@ pl_PL:
             with_time: <span class="username">%{username}</span> o <span class="time">%{time}</span>
     lightbox:
       download: "pobierz"
+    search_help:
+      title: 'Wyszukiwanie pomocy'
     keyboard_shortcuts_help:
       title: 'Skróty klawiszowe'
       jump_to:
@@ -2089,7 +2095,7 @@ pl_PL:
         few: "%{count} przyznanych"
         other: "%{count} przyznanych"
       select_badge_for_title: Wybierz odznakę do użycia jako twój tytuł
-      no_title: "<brak tytułu>"
+      none: "<brak>"
       badge_grouping:
         getting_started:
           name: Pierwsze kroki
@@ -2171,3 +2177,12 @@ pl_PL:
         reader:
           name: Czytelnik
           description: Przeczytanie każdego wpisu w temacie z ponad 100 wpisami
+    google_search: |
+      <h2>Szukaj z Google</h2>
+      <p>
+        <form action='//google.com/search' id='google-search' onsubmit="document.getElementById('google-query').value = 'site:' + window.location.host + ' ' + document.getElementById('user-query').value; return true;">
+          <input type="text" id='user-query' value="">
+          <input type='hidden' id='google-query' name="q">
+          <button class="btn btn-primary">Google</button>
+        </form>
+      </p>
