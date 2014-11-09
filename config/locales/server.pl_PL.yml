@@ -1,0 +1,5 @@
+pl_PL:
+  reports:
+    top_referrers:
+      title: "Najczęściej linkujący (pl_PL OVERRIDE TEST)"
+      num_clicks: "Kliknięć"
