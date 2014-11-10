@@ -1,6 +1,6 @@
 # discourse-locale-override
 
-Simple plugin to override some of translations keys in Discourse and persist them between Docker rebuilds.
+Simple plugin/boilerplate to override some of translations keys in Discourse and persist them between Docker rebuilds.
 Can be used by translators, early adopters of young locales or communities with specific slang.
 
 **This repository contains only `pl_PL` locale. See FAQ below if you need to override a different one.**
@@ -47,7 +47,7 @@ Yes, if your `.yml` file has translation for all keys the entire locale with be 
 ### Can I override only one label?
 
 Yes, but make sure you understand YAML and all key segments used in label key are present.
-For example, to override `pl_PL.site_settings.enable_emoji` in `config/locales/server.pl_PL.yml` you need to have three likes (one for each segment):
+For example, to override `pl_PL.site_settings.enable_emoji` make sure that `config/locales/server.pl_PL.yml` has these three lines (one for each segment):
 
 ```
 pl_PL:
