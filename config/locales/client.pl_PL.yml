@@ -1,5 +1,6 @@
 pl_PL:
-  admin_js:
-    admin:
-      dashboard:
-        title: "Raporty (pl_PL OVERRIDE TEST)"
+  js:
+    topic:
+        create: "Nowy temat"
+    composer:
+        create_topic: "Utwórz temat"
