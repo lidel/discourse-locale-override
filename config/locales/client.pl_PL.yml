@@ -1,6 +1,4 @@
 pl_PL:
   js:
-    topic:
-        create: "Nowy temat"
-    composer:
-        create_topic: "Utwórz temat"
+    bookmarked:
+        title: "Zakładka"
