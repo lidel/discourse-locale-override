@@ -1,5 +1,8 @@
 pl_PL:
-  reports:
-    top_referrers:
-      title: "Najczęściej linkujący (pl_PL OVERRIDE TEST)"
-      num_clicks: "Kliknięć"
+  site_settings:
+    poll_enabled: "Pozwolić użytkownikom na tworzenie ankiet?"
+    poll_maximum_options: "Maksymalna ilość dozwolonych opcji w ankiecie."
+  poll:
+    default_poll_must_have_at_least_2_options: "Ankieta musi posiadać co najmniej 2 opcje."
+    default_poll_must_have_different_options: "Ankieta musi posiadać kilka różnych opcji do wyboru."
+    requires_at_least_1_valid_option: "Musisz wybrać co najmniej 1 poprawną opcje."
