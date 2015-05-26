@@ -1,5 +1,8 @@
 pl_PL:
-  reports:
-    top_referrers:
-      title: "Najczęściej linkujący (pl_PL OVERRIDE TEST)"
-      num_clicks: "Kliknięć"
+  groups:
+    default_names:
+      trust_level_0: "poziom_zaufania_0"
+      trust_level_1: "poziom_zaufania_1"
+      trust_level_2: "poziom_zaufania_2"
+      trust_level_3: "poziom_zaufania_3"
+      trust_level_4: "poziom_zaufania_4"
