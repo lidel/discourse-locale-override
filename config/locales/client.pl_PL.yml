@@ -1,0 +1,5 @@
+pl_PL:
+  js:
+    topic_map:
+      participants_title: "Najczęściej piszą"
+      links_title: "Popularne linki"
