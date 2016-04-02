@@ -3,7 +3,8 @@
 Simple plugin/boilerplate to override some of translations keys in Discourse and persist them between Docker rebuilds.    
 It aims to be used by translators and early adopters of fresh locale files. 
 
-**If all you want is to override just a single label, there is a better, recently added GUI for this: [Customize all text in Discourse](https://meta.discourse.org/t/customize-all-text-in-discourse/36092?u=lidel).**
+**Note:  
+If you are not a locale developer and use Discourse >= 1.6 there is a  GUI for this: [Customize all text in Discourse](https://meta.discourse.org/t/customize-all-text-in-discourse/36092?u=lidel)**
 
 This repository contains only the `pl_PL` locale. See FAQ below if you need to override a different one.
 
